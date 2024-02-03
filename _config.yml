@@ -22,7 +22,6 @@ relative_permalinks: false
 
 plugins:
   - jekyll-last-modified-at
-  - gemfile
 
 sass:
   sass_dir:          _sass
