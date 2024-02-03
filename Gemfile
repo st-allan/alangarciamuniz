@@ -5,6 +5,7 @@ source "https://rubygems.org"
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
 gem "jekyll", "~> 4.3"
+gem 'bundler', '2.5.5'
 gem 'faraday', '~> 2.7', '>= 2.7.11'
 gem 'faraday-retry', '~> 2.2'
 gem "jekyll-last-modified-at", git: "https://github.com/maximevaillancourt/jekyll-last-modified-at", branch: "add-support-for-files-in-git-submodules"
