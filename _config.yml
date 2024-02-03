@@ -1,7 +1,7 @@
 title:               My digital garden
 include:             ['_pages']
 # You may need to change the base URL depending on your deploy configuration.
-baseurl:             ''
+baseurl:             '/'
 
 # If you are using a host that cannot resolve URLs that do
 # not end with .html (such as Neocities), set this to 'true'.
@@ -14,7 +14,7 @@ open_external_links_in_new_tab: true
 # Set to `true` to replace tweet URLs with Twitter embeds.
 # Note that doing so will negatively the reader's privacy
 # as their browser will communicate with Twitter's servers.
-embed_tweets: false
+embed_tweets: true
 
 permalink:           pretty
 relative_permalinks: false
