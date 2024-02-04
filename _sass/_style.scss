@@ -17,11 +17,15 @@ body {
   color: $color-text;
   font-size: 1rem;
   max-width: 63em;
+  background-image: url(/images/gradient.png);
+  background-repeat: repeat-x;
+  background-position: 0px 0px;
 
   @media (min-width: 820px) {
     font-size: 1.2rem;
   }
 }
+
 
 time {
   display: block;
