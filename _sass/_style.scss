@@ -78,7 +78,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $medieval-sharp;
   line-height: 1.3;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -90,6 +89,7 @@ a {
   text-decoration: none;
   border-bottom: 1px solid $color-border;
   color: $color-primary;
+  font-family: $medieval-sharp;
   &:hover {
     color: black !important;
     background: #fffaf1;
