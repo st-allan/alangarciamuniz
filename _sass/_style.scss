@@ -153,3 +153,16 @@ code {
   color: #ccc;
   cursor: help;
 }
+
+.hamburger{
+  padding:0px 0px;
+}
+
+.hamburger-inner, .hamburger-inner:before, .hamburger-inner:after {
+  height: 2px;
+  width: 30px;
+}
+
+.hamburger.is-active:hover {
+  opacity: 1;
+}
