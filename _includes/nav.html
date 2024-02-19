@@ -25,10 +25,24 @@
 
   <div class="dn dtc-l v-mid w-75-l tr-l mt4" id="mobilenav">
 
-    <a class="w-100 w-auto-l link dim dark-gray f6 f5-l dib pv2 mr4-l ttu" href="#" title="Notas">notas</a>
-    <a class="w-100 w-auto-l link dim dark-gray f6 f5-l dib pv2 mr4-l ttu" href="#" title="Temas">temas</a>
-    <a class="w-100 w-auto-l link dim dark-gray f6 f5-l dib pv2 mr4-l ttu" href="#" title="About">about</a>
-    <a class="w-100 w-auto-l link dim dark-gray f6 f5-l dib pv2 mr4-l ttu" href="#" title="Now">now</a>
+    <a class="w-100 w-auto-l link dim dark-gray f6 f5-l dib pv2 mr4-l" href="#" title="Notas">notas</a>
+    <a class="w-100 w-auto-l link dim dark-gray f6 f5-l dib pv2 mr4-l" href="#" title="Temas">temas</a>
+    <a class="w-100 w-auto-l link dim dark-gray f6 f5-l dib pv2 mr4-l" href="#" title="About">about</a>
+    <a class="w-100 w-auto-l link dim dark-gray f6 f5-l dib pv2 mr4-l" href="#" title="Now">now</a>
       
   </div>
 </nav>
+
+
+  <script>
+    var $hamburger = $(".hamburger");
+    $hamburger.on("click", function(e) {
+
+      $hamburger.toggleClass("is-active");
+      $("#mobilenav").toggleClass("dn");
+      $("#mobilenav").toggleClass("flex");
+      $("#mobilenav").toggleClass("flex-wrap");
+
+    }); 
+  
+  </script>
