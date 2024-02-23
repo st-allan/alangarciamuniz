@@ -12,7 +12,7 @@ permalink: /
 </div>
 
 <!-- Mobile SVG-->
-<div class="dn-l w-100 ph2 pv4 center tc">
+<div class="dn-l w-100 ph2 pv3 center tc">
 
  <img src="{{ site.baseurl }}/assets/alan-world-mobile.png"/>
 
