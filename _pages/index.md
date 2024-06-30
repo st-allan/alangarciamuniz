@@ -5,11 +5,13 @@ id: home
 permalink: /
 ---
 
-<div class="dn db-l w-75 pv4 center tc">
+<!--<div class="dn db-l w-75 pv4 center tc">
 
  <img src="{{ site.baseurl }}/assets/alan-world.png"/>
 
 </div>
+
+-->
 
 <div class="w-100 ph3-ns">
   <div class="cf ph2-ns">
