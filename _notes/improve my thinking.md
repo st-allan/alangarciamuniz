@@ -1,10 +1,10 @@
 ---
-title: "Your Note Title"
+title: "Test 1"
 date: 2024-06-30
 layout: note
 slug: "your-note-title"
-image: "/assets/image.jpg"
-description: "A brief description of your note."
+image: "/assets/alan-world-test.png"
+description: "Probando probando."
 tags:
   - tag1
   - tag2
