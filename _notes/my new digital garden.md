@@ -1,8 +1,8 @@
 ---
-title: "my new digital garden"
+title: "muchas manos rojas de prueba"
 date: 2024-06-30
 layout: note
-slug: "your-note-title"
+slug: "manos"
 image: "/assets/tio-all-hands.png"
 description: "Probando probando."
 tags:

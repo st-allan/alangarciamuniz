@@ -1,5 +1,17 @@
 ---
-title: Your first seed
+title: "prueba 3"
+date: 2024-06-30
+layout: note
+slug: "osea-hello"
+image: "/assets/osea-hello.png"
+description: "Probando probando."
+tags:
+  - tag1
+  - tag8
+  - tag3
+  - tag4
+  - tag5
+  - tag7
 ---
 
 ### Welcome!
