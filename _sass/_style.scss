@@ -173,3 +173,19 @@ code {
 .hamburger.is-active:hover {
   opacity: 1;
 }
+
+.tag {
+  display: inline-block;
+  background-color: #f4f4f4; /* Light gray background */
+  padding: 0.2rem 0.5rem;    /* Padding for the tags */
+  border-radius: 0.25rem;    /* Rounded corners */
+  font-size: 0.875rem;       /* Font size for the tags */
+  margin-right: 0.5rem;      /* Space between tags */
+  margin-bottom: 0.5rem;     /* Space below each tag */
+  text-decoration: none;     /* Remove underline */
+  color: #333;               /* Text color */
+}
+
+.tag:hover {
+  background-color: #e0e0e0; /* Darker gray on hover */
+}

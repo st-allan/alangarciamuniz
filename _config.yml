@@ -20,6 +20,9 @@ embed_tweets: true
 permalink:           pretty
 relative_permalinks: false
 
+permalinks:
+  tag: /tags/:slug/
+
 plugins:
   - jekyll-last-modified-at
 
