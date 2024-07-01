@@ -20,9 +20,6 @@ embed_tweets: true
 permalink:           pretty
 relative_permalinks: false
 
-permalinks:
-  tag: /tags/:slug/
-
 plugins:
   - jekyll-last-modified-at
 
@@ -34,6 +31,9 @@ collections:
   notes:
     output: true
     permalink: /:slug
+  tags:
+    output: true
+    permalink: /tags/:slug/
 
 defaults:
   - scope:
