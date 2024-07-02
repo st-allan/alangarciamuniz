@@ -3,7 +3,7 @@ title: "Test 1"
 date: 2024-06-30
 layout: note
 slug: "your-note-title"
-image: "/assets/alan-world-test.png"
+image: "/assets/wolf.png"
 description: "Probando probando."
 tags:
   - tag1
