@@ -20,7 +20,7 @@ permalink: /
               </li>
             {% endfor %}
             {% if note_tags.size > 5 %}
-              <li class="mr2 mb2">... <a href="{{ note.url }}" class="tag">Read more</a></li>
+              <li class="mr2 mb2"><a href="{{ note.url }}" class="tag">...</a></li>
             {% endif %}
           </ul>
         </li>
