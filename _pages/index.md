@@ -11,7 +11,7 @@ permalink: /
         <li class="pa3 pa4-ns mb3">
           <img src="{{ note.image }}" alt="{{ note.title }}" class="w-100 mb2">
           <h2 class="f4 f3-ns"><a href="{{ note.url }}" class="link near-black">{{ note.title }}</a></h2>
-          <p class="measure lh-copy f6 dark-gray">{{ note.description }}</p>
+          <p class="measure lh-copy f6 dark-gray">{{ note.description | truncatewords: 25, "..." }}</p>
           <ul class="list pl0 flex flex-wrap">
             {% assign note_tags = note.tags %}
             {% for tag in note_tags limit:5 %}
