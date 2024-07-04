@@ -5,7 +5,7 @@ permalink: /about
 ---
 
 <article class="pa3 pa5-ns">
-  <h1 class="f2">About</h1>
+  <h1 class="f2">about</h1>
   <img src="assets/alan.jpg" class="w-100 f5 measure" alt="Photo of outer space">
   <p class="measure lh-copy">
     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
