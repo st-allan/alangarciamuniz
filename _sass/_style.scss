@@ -8,15 +8,17 @@ $border-radius: 4px;
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital@0;1&display=swap');
 $libre-franklin: 'Libre Franklin', sans-serif;
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
-$noto-serif: 'Noto Serif', serif;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,300;1,8..144,300&display=swap');
+$roboto-serif: 'Roboto Serif', serif;
 
 $font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
   sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 
 body {
   /// box-sizing: content-box;
-  font-family: $libre-franklin;
+  font-family: $roboto-serif;
+  font-weight: 300;
+  font-style: normal;
   ///margin: 0 auto;
   ///line-height: 1.7;
   ///padding: 4vh 6vw;
@@ -88,7 +90,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $noto-serif;
+  font-family: $libre-franklin;
   line-height: 1.3;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -126,6 +128,7 @@ h6 {
 */
 nav {
   margin: 1em 0 1em;
+  font-family: $libre-franklin;
 }
 
 #notes-entry-container {
