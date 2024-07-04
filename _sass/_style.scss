@@ -193,3 +193,11 @@ code {
 .tag:hover {
   background-color: #e0e0e0; /* Darker gray on hover */
 }
+
+.note-image {
+  transition: transform 0.3s ease;
+}
+
+a:hover .note-image {
+  transform: scale(1.05);
+}
