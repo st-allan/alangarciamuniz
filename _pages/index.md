@@ -9,7 +9,7 @@ permalink: /
   <ul class="list pl0">
     {% for note in site.notes | sort: 'date' | reverse | slice: 0, 5 %}
     <li class="pa3 pa4-ns mb3">
-      <a href="{{ note.url }}" class="db overflow-hidden">
+      <a href="{{ note.url }}" class="db overflow-hidden image-container">
         <img src="{{ note.image }}" alt="{{ note.title }}" class="w-100 mb2 note-image">
       </a>
       <h2 class="f4 f3-ns"><a href="{{ note.url }}" class="link dim dark-gray">{{ note.title }}</a></h2>

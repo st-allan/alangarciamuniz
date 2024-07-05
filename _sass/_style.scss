@@ -196,11 +196,16 @@ code {
   background-color: #e0e0e0; /* Darker gray on hover */
 }
 
-.note-image {
-  transition: transform 0.3s ease;
+.image-container {
+  border-radius: $border-radius; /* Adjust this value as needed */
+  overflow: hidden;
 }
 
-a:hover .note-image {
+.note-image {
+  transition: transform 0.3s ease;
+  border-radius: $border-radius; /* Same value as the container */
+}
+
+.image-container:hover .note-image {
   transform: scale(1.05);
-  border-radius: $border-radius;
 }
