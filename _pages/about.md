@@ -4,8 +4,8 @@ title: About
 permalink: /about
 ---
 <article class="pa3 pa5-ns mw7 center">
-  <div class="mb4">
-    <img src="assets/alan.jpg" class="w-auto h-auto mw-100" alt="Photo of outer space">
+  <div class="mb4 flex justify-center">
+    <img src="assets/alan.jpg" class="w-100 h-auto" alt="Photo of outer space">
   </div>
   <div>
     <h1 class="dark-gray f5 f4-l mt0">about</h1>
