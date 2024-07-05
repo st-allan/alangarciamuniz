@@ -5,14 +5,15 @@ permalink: /about
 ---
 <article class="pa3 pa5-ns">
   <img src="assets/alan.jpg" class="w-100 f5 measure" alt="Photo of outer space">
-  <h1 class="f2">about</h1>
-  <p class="measure lh-copy">
+
+  <h1 class="dark-gray f5 f4-l">about</h1>
+  <p class="f6 f5-l measure lh-copy">
     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
     tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
     vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
     no sea takimata sanctus est Lorem ipsum dolor sit amet.
   </p>
-  <p class="measure lh-copy">
+  <p class="f6 f5-l measure lh-copy">
     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
     tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
     vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
