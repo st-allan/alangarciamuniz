@@ -5,7 +5,7 @@ permalink: /about
 ---
 <article class="pa3 pa5-ns mw7 center">
   <div class="mb4 flex justify-center">
-    <img src="assets/alan.jpg" class="w-100 w-80-ns w-70-l h-auto" alt="Photo of outer space">
+    <img src="assets/alan.jpg" class="w-auto h-auto mw-100 mw-80-ns mw-70-l" alt="Photo of outer space">
   </div>
   <div>
     <h1 class="dark-gray f5 f4-l mt0">about</h1>
