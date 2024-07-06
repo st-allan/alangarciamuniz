@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /about
+permalink: /temas
 ---
 <article class="pa3 pa5-ns mw7 center">
   <div class="mb4 flex justify-center">
