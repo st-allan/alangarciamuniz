@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: temas
 permalink: /temas
 ---
 <article class="pa3 pa5-ns mw7 center">
