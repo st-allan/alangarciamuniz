@@ -13,7 +13,6 @@ permalink: /notas
     <li>
       {{ note.last_modified_at | spanish_date }} — <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
     </li>
-  {% endfor %}
 </ul>
 
 <style>
