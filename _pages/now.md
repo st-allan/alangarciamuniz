@@ -18,5 +18,21 @@ permalink: /now
       vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
       no sea takimata sanctus est Lorem ipsum dolor sit amet.
     </p>
+    <dl class="lh-title pa4 mt0">
+      <dt class="f6 b">Favorite Song</dt>
+      <dd class="ml0">Devil Got My Woman - Skip James</dd>
+      <dt class="f6 b mt2">Favorite Movie</dt>
+      <dd class="ml0">Primer</dd>
+      <dt class="f6 b mt2">Favorite Artist</dt>
+      <dd class="ml0">Kanye West</dd>
+      <dt class="f6 b mt2">Favorite Food</dt>
+      <dd class="ml0">Cheese Pizza</dd>
+      <dt class="f6 b mt2">Least Favorite Flavor</dt>
+      <dd class="ml0">Cherry</dd>
+      <dt class="f6 b mt2">Favorite Hobby</dt>
+      <dd class="ml0">Eating Cheese Pizza</dd>
+    </dl>
+
+
   </div>
 </article>
