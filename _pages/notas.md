@@ -5,7 +5,7 @@ permalink: /notas
 ---
  
  <main class="mw7 center">
-  <h1 class="dark-gray f5 f4-l mt0">notas</h1>
+  <h1 class="fw1 dark-gray f5 f4-l mt0">notas</h1>
   <strong>Notas actualizadas recientemente</strong>
   <ul class="list pl0">
     {% for note in site.notes | sort: 'date' | reverse %}
@@ -13,7 +13,7 @@ permalink: /notas
       <a href="{{ note.url }}" class="db overflow-hidden image-container">
         <img src="{{ note.image }}" alt="{{ note.title }}" class="w-100 mb2 note-image">
       </a>
-      <h2 class="f4 f3-ns"><a href="{{ note.url }}" class="link dim dark-gray">{{ note.title }}</a></h2>
+      <h2 class="fw1 f4 f3-ns"><a href="{{ note.url }}" class="link dim dark-gray">{{ note.title }}</a></h2>
       <p class="measure lh-copy f6 dark-gray tj-ns">{{ note.description | truncatewords: 25, "..." }}</p>
           <ul class="list pl0 flex flex-wrap">
             {% assign note_tags = note.tags %}
