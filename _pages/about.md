@@ -25,7 +25,7 @@ permalink: /about
 </article>
 <article class="pa3 pa5-ns mw7 center">
   <div>
-    <h2 class="dark-gray f5 f4-l mt0">datos técnicos</h1>
+    <h2 class="dark-gray f5 f4-l mt0">datos técnicos</h2>
     <p class="f6 f5-l lh-copy">
       Esta página web está creada con Jekyll y Sass. El hosting es proporcionado por GitHub Pages.
     </p>
