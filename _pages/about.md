@@ -27,7 +27,7 @@ permalink: /about
   <div>
     <h2 class="dark-gray f5 f4-l mt0">datos técnicos</h2>
     <p class="f6 f5-l lh-copy">
-      Esta página web está creada con <a class="link dim underline dark-gray" href="https://jekyllrb.com/" target="_blank">Jekyll</a> y <a class="link dim underline dark-gray" href="https://sass-lang.com/" target="_blank">Sass</a>. El hosting es proporcionado por <a class="link dim underline dark-gray" href="https://pages.github.com/" target="_blank">Github Pages</a>.
+      Esta página web está creada con <a class="bb b--dark-gray" href="https://jekyllrb.com/" target="_blank">Jekyll</a> y <a class="link dim dark-gray bb b--dark-gray pb1" href="https://sass-lang.com/" target="_blank">Sass</a>. El hosting es proporcionado por <a class="link dim underline dark-gray" href="https://pages.github.com/" target="_blank">Github Pages</a>.
     </p>
   </div>
 </article>
