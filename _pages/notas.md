@@ -5,7 +5,7 @@ permalink: /notas
 ---
  
  <main class="mw7 center">
-  <h1 class="pa3 pa4-ns mb3 fw1 dark-gray f5 f4-l mt0">notas</h1>
+  <h1 class="pa3 pa4-ns mb4 fw1 dark-gray f5 f4-l mt0">notas</h1>
   <strong class="pa3 pa4-ns mb3">Notas actualizadas recientemente</strong>
   <ul class="list pl0">
     {% for note in site.notes | sort: 'date' | reverse %}
