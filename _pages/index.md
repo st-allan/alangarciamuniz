@@ -28,4 +28,7 @@ permalink: /
         </li>
       {% endfor %}
     </ul>
+
+    <!-- Add this somewhere in your index.html -->
+  <a href="/tags/" class="link dim dark-gray">View all tags</a>
   </main>

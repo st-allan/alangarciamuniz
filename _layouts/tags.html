@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<h1>{{ page.title }}</h1>
+
+{{ content }}
+
+<ul class="list pl0">
+  {% for tag in site.tags %}
+    <li class="dib mr2 mb2">
+      <a href="/tags/{{ tag[0] | slugify }}" class="link dim dark-gray">
+        {{ tag[0] }} ({{ tag[1].size }})
+      </a>
+    </li>
+  {% endfor %}
+</ul>

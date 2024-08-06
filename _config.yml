@@ -31,9 +31,9 @@ collections:
   notes:
     output: true
     permalink: /:slug
-  tags:
+  tag_pages:
     output: true
-    permalink: /tags/:slug/
+    permalink: /tags/:name/
 
 defaults:
   - scope:
