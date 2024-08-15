@@ -49,15 +49,9 @@ permalink: /about
     <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M16 3.038c-.59.26-1.22.437-1.885.517.677-.407 1.198-1.05 1.443-1.816-.634.375-1.337.648-2.085.795-.598-.638-1.45-1.036-2.396-1.036-1.812 0-3.282 1.468-3.282 3.28 0 .258.03.51.085.75C5.152 5.39 2.733 4.084 1.114 2.1.83 2.583.67 3.147.67 3.75c0 1.14.58 2.143 1.46 2.732-.538-.017-1.045-.165-1.487-.41v.04c0 1.59 1.13 2.918 2.633 3.22-.276.074-.566.114-.865.114-.21 0-.416-.02-.617-.058.418 1.304 1.63 2.253 3.067 2.28-1.124.88-2.54 1.404-4.077 1.404-.265 0-.526-.015-.783-.045 1.453.93 3.178 1.474 5.032 1.474 6.038 0 9.34-5 9.34-9.338 0-.143-.004-.284-.01-.425.64-.463 1.198-1.04 1.638-1.7z" fill-rule="nonzero"/></svg>
   </a>
 
-  <a class="link hover-silver dark-gray dib h2 w2 mr3" href="https://twitter.com/mrmrs_" title="X">
-    <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.707 1.293a1 1 0 0 0-1.414 0L12 10.586 2.707 1.293a1 1 0 0 0-1.414 1.414L10.586 12 1.293 21.293a1 1 0 1 0 1.414 1.414L12 13.414l9.293 9.293a1 1 0 0 0 1.414-1.414L13.414 12l9.293-9.293a1 1 0 0 0 0-1.414z"/></svg>
+  <a class="link hover-silver dark-gray dib h2 w2 mr3" href="https://twitter.com/mrmrs_" title="X (formerly Twitter)">
+  <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
   </a>
-
-  <a class="link hover-silver dark-gray dib h2 w2 mr3" href="https://twitter.com/mrmrs_" title="X">
-    <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M14.85 1.15c.2-.2.2-.52 0-.72s-.52-.2-.72 0L8 6.56 1.87.43c-.2-.2-.52-.2-.72 0s-.2.52 0 .72L7.28 8l-6.15 6.15c-.2.2-.2.52 0 .72.2.2.52.2.72 0L8 9.44l6.13 6.13c.2.2.52.2.72 0 .2-.2.2-.52 0-.72L8.72 8l6.13-6.15z" fill-rule="nonzero"/></svg>
-  </a>
-
-
 </article>
 
 
