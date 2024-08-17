@@ -20,10 +20,12 @@ Volviendo a nuestra analogía, estos telómeros desgastados son como las tapas d
 
 Una vez que los telómeros se han desgastado, nuestra información genética comienza a degradarse, y los problemas que se generan al reproducir esta información deteriorada podrían asociarse a algunas de las características del envejecimiento y la vejez.
 
-Escuché esta analogía del <a class="link dim dark-gray" href="https://www.instagram.com/brunoribeirodocouto/">Dr. Bruno Ribeiro do Couto</a>, experto en rendimiento cognitivo, en <a class="link dim dark-gray" href="https://www.youtube.com/watch?v=Bem7EjHAUCs">esta entrevista</a>.
+Escuché esta analogía del <a class="link dim dark-gray underline" href="https://www.instagram.com/brunoribeirodocouto/">Dr. Bruno Ribeiro do Couto</a>, experto en rendimiento cognitivo, en <a class="link dim dark-gray underline" href="https://www.youtube.com/watch?v=Bem7EjHAUCs">esta entrevista</a>.
 
 Cualquier error o inexactitud en mi explicación son completamente míos. Podríamos culpar al desgaste de mis telómeros por ello. 
 
 <image src="{{ site.baseurl }}/assets/telomeros.jpeg"/>
  
-
+<div class="mb4 flex justify-center">
+    <img src="{{ site.baseurl }}/assets/telomeros.jpeg" class="w-auto h-auto mw-100 mw-90-ns mw-80-l" alt="Telomeres and DNA">
+  </div>
