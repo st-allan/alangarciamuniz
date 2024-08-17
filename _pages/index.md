@@ -29,4 +29,10 @@ permalink: /
       {% endfor %}
     </ul>
 
+<ul class="list pl0">
+  {% for note in site.notes %}
+    <li>{{ note.date }}</li>
+  {% endfor %}
+</ul>
+
   </main>
