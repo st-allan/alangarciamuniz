@@ -6,7 +6,7 @@ layout: default
   <div>
     <h1 class="fw1 f4 f3-ns">{{ page.title }}</h1>
     <time class="f6 f5-l lh-copy" datetime="{{ page.last_modified_at | date_to_xmlschema }}">{% if page.type != 'pages' %}
-      {{ page.date | spanish_date }} ● <a class="link dim dark-gray" href="https://x.com/st_allan">@st_allan</a>
+      {{ page.date | spanish_date }}, <a class="link dim dark-gray" href="https://x.com/st_allan">@st_allan</a>
       {% endif %}
     </time>
   </div>

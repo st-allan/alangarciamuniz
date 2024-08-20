@@ -1,5 +1,5 @@
 ---
-title: "una analogia entre telomeros y libros"
+title: "analogias, telomeros y libros"
 date: 2024-08-17
 layout: note
 slug: "una-analogia-entre-telomeros-y-libros"
@@ -20,8 +20,7 @@ Volviendo a nuestra analogía, estos telómeros desgastados son como las tapas d
 
 Una vez que los telómeros se han desgastado, nuestra información genética comienza a degradarse, y los problemas que se generan al reproducir esta información deteriorada podrían asociarse a algunas de las características del envejecimiento y la vejez.
 
-Escuché esta analogía del <a class="link dim dark-gray underline" href="https://www.instagram.com/brunoribeirodocouto/">Dr. Bruno Ribeiro do Couto</a>, experto en rendimiento cognitivo, en <a class="link dim dark-gray underline" href="https://www.youtube.com/watch?v=Bem7EjHAUCs">esta entrevista</a>.
-
+Escuché esta analogía del <a class="link dim dark-gray underline" href="https://www.instagram.com/brunoribeirodocouto/">Dr. Bruno Ribeiro do Couto</a>, experto en rendimiento cognitivo, en <a class="link dim dark-gray underline" href="https://www.youtube.com/watch?v=Bem7EjHAUCs">esta entrevista</a>. 
 
 Cualquier error o inexactitud en mi explicación son completamente míos. Podríamos culpar al desgaste de mis telómeros por ello. 
  
