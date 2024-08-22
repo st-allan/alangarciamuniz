@@ -7,7 +7,8 @@ permalink: /
 
 <main class="mw7 center">
   <ul class="list pl0">
-    {% for note in site.notes | sort: 'date' | reverse | slice: 0, 5 %}
+    {% assign sorted_notes = site.notes | sort: 'date' | reverse %}
+    {% for note in sorted_notes | slice: 0, 5 %}
     <li class="pa3 pa4-ns mb3">
       <a href="{{ note.url }}" class="db overflow-hidden image-container">
         <img src="{{ note.image }}" alt="{{ note.title }}" class="w-100 mb2 note-image">
@@ -28,11 +29,4 @@ permalink: /
         </li>
       {% endfor %}
     </ul>
-
-<ul class="list pl0">
-  {% for note in site.notes | sort: 'date' | reverse %}
-    <li>{{ note.date }}</li>
-  {% endfor %}
-</ul>
-
   </main>
