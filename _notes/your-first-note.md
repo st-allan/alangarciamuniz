@@ -3,7 +3,7 @@ title: "Otro Poema de los Dones por Jorge Luis Borges"
 date: 2024-06-30
 layout: note
 slug: "osea-hello"
-image: "/assets/cloud-value.jpeg"
+image: "/assets/cyanotype.jpeg"
 description: "Por el amor, que nos deja ver a los otros como los ve la divinidad."
 tags:
   - borges
