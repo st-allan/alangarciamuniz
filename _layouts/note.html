@@ -9,6 +9,17 @@ layout: default
       {{ page.date | spanish_date }} · {{ content | reading_time }}
       {% endif %}
     </time>
+    <ul class="list pl0 flex flex-wrap">
+      {% assign note_tags = note.tags %}
+      {% for tag in note_tags limit:5 %}
+        <li class="mr2 mb2">
+          <a href="/tags/{{ tag | slugify }}" class="tag">{{ tag }}</a>
+        </li>
+      {% endfor %}
+      {% if note_tags.size > 5 %}
+        <li class="mr2 mb2"><a href="{{ note.url }}" class="tag">...</a></li>
+      {% endif %}
+    </ul>
   </div>
 
   <div id="notes-entry-container">
