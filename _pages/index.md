@@ -14,6 +14,10 @@ permalink: /
         <img src="{{ note.image }}" alt="{{ note.title }}" class="w-100 mb2 note-image">
       </a>
       <h2 class="f4 f3-ns"><a class="link dim dark-gray" href="{{ note.url }}">{{ note.title }}</a></h2>
+      <time class="f6 f5-l lh-copy" datetime="{{ page.last_modified_at | date_to_xmlschema }}">{% if page.type != 'pages' %}
+      {{ page.date | spanish_date }} · {{ content | reading_time }}
+      {% endif %}
+    </time>
       <p class="measure-max lh-copy f6 dark-gray tj-ns">{{ note.description | truncatewords: 25, "..." }}</p>
           <ul class="list pl0 flex flex-wrap">
             {% assign note_tags = note.tags %}
