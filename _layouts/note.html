@@ -5,10 +5,6 @@ layout: default
 <article class="mw7 center pa3 pa4-ns mb3">
   <div>
     <h1 class="fw1 f4 f3-ns">{{ page.title }}</h1>
-    <time class="f6 f5-l lh-copy" datetime="{{ page.last_modified_at | date_to_xmlschema }}">{% if page.type != 'pages' %}
-      {{ page.date | spanish_date }} · {{ content | reading_time }}
-      {% endif %}
-    </time>
     <ul class="list pl0 flex flex-wrap">
       {% assign note_tags = note.tags %}
       {% for tag in note_tags limit:5 %}
