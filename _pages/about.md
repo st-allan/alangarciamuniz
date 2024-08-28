@@ -23,6 +23,7 @@ permalink: /about
     </p>
   </div>
 </article>
+<hr class="b--black-10 bb bw1 w-100 mt3 mb3">
 <article class="pa3 pa5-ns mw7 center">
   <div>
     <h2 class="dark-gray f5 f4-l mt0">datos técnicos</h2>
