@@ -23,6 +23,19 @@ permalink: /about
     </p>
   </div>
 </article>
+<div class="pt4 pt5-l pb2 w-two-thirds-ns ph3 ph0-l center">
+
+<div class="flex flex-wrap bg-dark-gray shadow-4 pa4 lh-copy f4 br2 mv4">
+  <img class="w-25-l w-100 br2 pb3 pb0-l" style="transform:rotate(-2deg)" src="/assets/alan-about.jpeg">
+  <div class="w-75-l pl4-l">
+    <strong class="f3">Hi, I'm Tom Critchlow 👋</strong>
+    <br><br>
+    I'm based in Brooklyn, NY and work as an independent consultant.
+    <br><br>
+    Welcome to my digital garden 🌱
+  </div>
+
+</div>
 <article class="pa3 pa5-ns mw7 center">
   <div>
     <h2 class="dark-gray f5 f4-l mt0">datos técnicos</h2>
