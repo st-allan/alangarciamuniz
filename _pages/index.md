@@ -7,7 +7,7 @@ permalink: /
 
 <main class="mw7 center">
   <div class="mb4 flex justify-center">
-    <img src="assets/alan.jpg" class="w-auto h-auto mw-80 mw-80-ns mw-80-l" alt="Photo of outer space">
+    <img src="assets/alan.jpg" class="w-auto h-auto mw-25 mw-80-ns mw-80-l" alt="Photo of outer space">
   </div>
   <ul class="list pl0">
     {% assign sorted_notes = site.notes | sort: 'date' | reverse %}
