@@ -7,7 +7,7 @@ permalink: /
 <div class="pt4 pt5-l pb2 w-two-thirds-ns ph3 ph0-l center">
 
 <div class="flex flex-wrap bg-light-gray shadow-4 pa4 lh-copy f4 br2 mv4">
-  <img class="w-25-l w-100 br2 pb3 pb0-l" style="transform:rotate(-2deg)" src="assets/alan.jpg">
+  <img class="w-100-l w-100 br2 pb3 pb0-l" style="transform:rotate(-2deg)" src="assets/alan.jpg">
   <!--<div class="w-75-l pl4-l">
     <strong class="f3">Hi, I'm Tom Critchlow 👋</strong>
     <br><br>
