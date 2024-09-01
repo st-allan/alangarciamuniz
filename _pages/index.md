@@ -5,21 +5,17 @@ permalink: /
 ---
 <div class="pt2 pt3-l pb2 w-third-l w-two-thirds-m ph3 ph0-l center">
 
-<div class="flex flex-wrap bg-light-gray shadow-4 pa4 lh-copy f4 br2 mv4">
-  <img class="w-auto h-auto mw-100 mw-90-ns mw-80-l" style="transform:rotate(-2deg)" src="assets/alan.jpg">
-  <!--<div class="w-75-l pl4-l">
+ <div class="flex flex-wrap bg-light-gray shadow-4 pa4 lh-copy f4 br2 mv4">
+   <img class="w-auto h-auto mw-100 mw-90-ns mw-80-l" style="transform:rotate(-2deg)" src="assets/alan.jpg">
+    <!--<div class="w-75-l pl4-l">
     <strong class="f3">Hi, I'm Tom Critchlow 👋</strong>
     <br><br>
     I'm based in Brooklyn, NY and work as an independent consultant.
     <br><br>
-    Welcome to my digital garden 🌱
-  </div>-->
-
+    Welcome to my digital garden 🌱-->
+  </div>
 </div>
 <main class="mw7 center">
-  <div class="mb4 flex justify-center">
-    <img src="assets/alan.jpg" class="w-auto h-auto mw-25 mw-80-ns mw-80-l" alt="Photo of outer space">
-  </div>
   <ul class="list pl0">
     {% assign sorted_notes = site.notes | sort: 'date' | reverse %}
     {% for note in sorted_notes | slice: 0, 5 %}
