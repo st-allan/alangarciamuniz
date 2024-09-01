@@ -2,10 +2,10 @@
 <html lang="es" class="w-100 h-100">
     <head>
         <meta charset="UTF-8">
-        <title>{% if page.metatitle %}{page.metatitle}{% elsif page.title%}{{page.title}}{% else %}alan garcia muniz. blog.{% endif %}</title>
+        <title>{% if page.metatitle %}{{page.metatitle}}{% elsif page.title%}{{page.title}}{% else %}alan garcia muniz. blog.{% endif %}</title>
         <meta name="description" content="alan garcia muniz. blog.">
 
-        {% if page.redirect %}<meta http-equiv="refresh" content="0; url ={{ page.redirect}}">{% endif %}
+        {% if page.redirect %}<meta http-equiv="refresh" content="0; url={{ page.redirect}}">{% endif %}
 
      <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
      <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
