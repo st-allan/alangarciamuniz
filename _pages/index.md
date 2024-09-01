@@ -1,4 +1,5 @@
 ---
+layout: default
 subtitle: blog.
 permalink: /
 ---
