@@ -20,7 +20,7 @@ permalink: /
 <main class="mw7 center">
   <ul class="list pl0">
     {% assign sorted_notes = site.notes | sort: 'date' | reverse %}
-    {% assign sliced_notes = sorted_notes | slice 0,5 %}
+    {% assign sliced_notes = sorted_notes | slice: 0,5 %}
     {% for note in sliced_notes %}
      <li class="pa3 pa4-ns mb3">
        <a href="{{ note.url }}" class="db overflow-hidden image-container">

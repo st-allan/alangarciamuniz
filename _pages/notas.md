@@ -7,7 +7,7 @@ permalink: /notas
   <h1 class="pa3 pa4-ns fw1 dark-gray f6 f5-l mt0">principalmente cloud computing, inteligencia artificial & machine learning</h1>
   <ul class="list pl0">
    {% assign sorted_notes = site.notes | sort: 'date' | reverse %}
-   {% assign sliced_notes = sorted_notes | slice 0, 5 %}
+   {% assign sliced_notes = sorted_notes | slice: 0, 5 %}
    {% for note in sliced_notes %}
      <li class="pa3 pa4-ns mb3">
        <a href="{{ note.url }}" class="db overflow-hidden image-container">
