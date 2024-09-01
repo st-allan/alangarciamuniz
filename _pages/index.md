@@ -3,11 +3,6 @@ layout: default
 subtitle: blog.
 permalink: /
 ---
-
-{% include head.html %}
-
-{% include nav.html %}
-
 <div class="pt2 pt3-l pb2 w-third-l w-two-thirds-m ph3 ph0-l center">
 
 <div class="flex flex-wrap bg-light-gray shadow-4 pa4 lh-copy f4 br2 mv4">
@@ -49,5 +44,3 @@ permalink: /
       {% endfor %}
     </ul>
   </main>
-
-  {% include footer.html %}
