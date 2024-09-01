@@ -4,7 +4,7 @@ title: notas
 permalink: /notas
 ---
  <main class="mw7 center">
-  <h1 class="pa3 pa4-ns fw1 dark-gray f6 f5-l mt0">principalmente cloud computing, inteligencia artificial & machine learning</h1>
+  <h1 class="pa3 pa4-ns fw1 dark-gray f6 f5-l mt0">principalmente cloud computing, libros & AI</h1>
   <ul class="list pl0">
    {% assign sorted_notes = site.notes | sort: 'date' | reverse %}
    {% assign sliced_notes = sorted_notes | slice: 0, 5 %}
