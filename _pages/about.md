@@ -20,10 +20,9 @@ permalink: /about
     </p>
   </div>
 </article>
-<div class="pt4 pt5-l pb2 w-two-thirds-ns ph3 ph0-l center">
 
-<div class="flex flex-wrap bg-light-gray shadow-4 pa4 lh-copy f4 br2 mv4">
-  <img class="w-25-l w-100 br2 pb3 pb0-l" style="transform:rotate(-2deg)" src="assets/alan-about.jpg">
+<div class="pa3 ba b--black-10 bg-white mw5 center">
+  <img class="w-auto h-auto db" style="transform:rotate(-2deg)" src="assets/alan-about.jpg">
 </div>
 <article class="pa3 pa5-ns mw7 center">
   <div>
