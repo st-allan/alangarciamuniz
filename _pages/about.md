@@ -21,7 +21,7 @@ permalink: /about
   </div>
 </article>
 
-<div class="pa4 ba b--black-10 bg-white mw5 center">
+<div class="pa4 br2 bg-light-gray shadow-4 mw5 center">
   <img class="w-auto h-auto db" style="transform:rotate(-2deg)" src="assets/alan-about.jpg">
 </div>
 <article class="pa3 pa5-ns mw7 center">
