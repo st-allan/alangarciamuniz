@@ -6,7 +6,7 @@ permalink: /
 <div class="pt2 pt3-l pb2 w-third-l w-two-thirds-m ph3 ph0-l center">
 
  <div class="flex flex-wrap bg-light-gray shadow-4 pa4 lh-copy f4 br2 mv4">
-  <a href="/about" class="db overflow-hidden image container">
+  <a href="/about" class="db overflow-hidden image-container">
    <img class="w-auto h-auto mw-100 mw-90-ns mw-80-l note-image" style="transform:rotate(-2deg)" src="assets/alan.jpg">
   </a>
     <!--<div class="w-75-l pl4-l">
@@ -14,8 +14,8 @@ permalink: /
     <br><br>
     I'm based in Brooklyn, NY and work as an independent consultant.
     <br><br>
-    Welcome to my digital garden 🌱-->
-  </div>
+    Welcome to my digital garden 🌱
+  </div>-->
 </div>
 <main class="mw7 center">
   <ul class="list pl0">
