@@ -6,7 +6,7 @@ permalink: /now
 <article class="pa3 pa5-ns mw7 center">
   <div>
     <a href="https://www.codeabbey.com/index/user_profile/st-allan">
-      <img src="https://www.codeabbey.com/index/user_banner/st-allan.png" alt="st-allan"/>
+      <img src="https://www.codeabbey.com/index/user_banner/st-allan.png" alt="st-allan" style="filter: grayscale(100%);"/>
     </a>
   </div>
   <div>
