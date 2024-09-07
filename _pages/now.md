@@ -5,6 +5,11 @@ permalink: /now
 ---
 <article class="pa3 pa5-ns mw7 center">
   <div>
+    <a href="https://www.codeabbey.com/index/user_profile/st-allan">
+      <img src="https://www.codeabbey.com/index/user_banner/st.allan.png" alt="st-allan"/>
+    </a>
+  </div>
+  <div>
     <h1 class="dark-gray f5 f4-l mt0">now</h1>
     <p class="f6 f5-l lh-copy">
       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
