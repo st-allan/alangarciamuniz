@@ -10,7 +10,7 @@ module Jekyll
         day = date.strftime("%-d")
         month = MONTHS[date.strftime("%-m").to_i]
         year = date.strftime("%Y")
-        "#{day} de #{month} de #{year}"
+        "#{month} #{day}, #{year}"
       end
     end
   end
