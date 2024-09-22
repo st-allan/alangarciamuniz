@@ -5,7 +5,7 @@ layout: default
 <article class="mw8 center mb3">
   <div class="center">
     <h1 class="fw1 f4 f3-ns">{{ page.title }}</h1>
-    <time class="f6 f5-l lh-copy" datetime="{{ page.last_modified_at | date_to_xmlschema }}">{% if page.type != 'pages' %}
+    <time class="f6 f5-l lh-copy mid-gray" datetime="{{ page.last_modified_at | date_to_xmlschema }}">{% if page.type != 'pages' %}
       {{ page.date | spanish_date }} · {{ content | reading_time }}
       {% endif %}
     </time>
