@@ -5,7 +5,8 @@ permalink: /
 ---
 <div class="pt2 pt3-l pb2 ph3 ph0-l center">
 
- <div class="flex flex-wrap bg-light-gray shadow-4 pa4 lh-copy f4 br2 mv4 w-third-l w-two-thirds-m center">
+ <!-- <div class="flex flex-wrap bg-light-gray shadow-4 pa4 lh-copy f4 br2 mv4 w-third-l w-two-thirds-m center">-->
+ <div class="flex flex-wrap bg-light-gray shadow-4 pa4 lh-copy f4 br2 mv4 center">
   <a href="/about" class="db overflow-hidden">
    <img class="w-auto h-auto mw-100 mw-90-ns mw-80-l note-image image-container" style="transform:rotate(-2deg)" src="assets/alan.jpg">
   </a>
