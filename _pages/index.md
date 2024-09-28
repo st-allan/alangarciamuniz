@@ -11,9 +11,9 @@ permalink: /
    <img class="w-auto h-auto mw-100 mw-90-ns mw-80-l note-image image-container" style="transform:rotate(-2deg)" src="assets/alan.jpg">
   </a>-->
 
-  <div class="flex items-center justify-center bg-light-gray shadow-4 pa4 lh-copy f4 br2 mv4 w-90 w-80-ns w-70-l center">
-    <a href="/about" class="db overflow-hidden w-100 tc">
-     <img class="w-auto h-auto mw-100" style="transform:rotate(-2deg)" src="assets/alan.jpg" alt="Alan">
+  <div class="relative bg-light-gray shadow-4 br2 mv4 center" style="width: 90%; max-width: 600px; padding-bottom: 133.33%;">
+    <a href="/about" class="absolute top-0 right-0 bottom-0 left-0 flex items-center justify-center p-4">
+     <img class="max-w-90 max-h-90 w-auto h-auto" style="transform:rotate(-2deg)" src="assets/alan.jpg" alt="Alan">
     </a>
   </div>
 
@@ -23,7 +23,7 @@ permalink: /
     I'm based in Brooklyn, NY and work as an independent consultant.
     <br><br>
     Welcome to my digital garden 🌱
-  </div>-->
+  
 </div>
 <main class="mw7 center">
   <ul class="list pl0">
