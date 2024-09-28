@@ -5,11 +5,18 @@ permalink: /
 ---
 <div class="pt2 pt3-l pb2 ph3 ph0-l center">
 
- <!-- <div class="flex flex-wrap bg-light-gray shadow-4 pa4 lh-copy f4 br2 mv4 w-third-l w-two-thirds-m center">-->
+ <!-- <div class="flex flex-wrap bg-light-gray shadow-4 pa4 lh-copy f4 br2 mv4 w-third-l w-two-thirds-m center">
  <div class="flex flex-wrap bg-light-gray shadow-4 pa4 lh-copy f4 br2 mv4 center">
   <a href="/about" class="db overflow-hidden">
    <img class="w-auto h-auto mw-100 mw-90-ns mw-80-l note-image image-container" style="transform:rotate(-2deg)" src="assets/alan.jpg">
-  </a>
+  </a>-->
+
+  <div class="flex items-center justify-center bg-light-gray shadow-4 pa4 lh-copy f4 br2 mv4 w-90 w-80-ns w-70-l center">
+    <a href="/about" class="db overflow-hidden w-100 tc">
+     <img class="w-auto h-auto mw-100" style="transform:rotate(-2deg)" src="assets/alan.jpg" alt="Alan">
+    </a>
+  </div>
+
     <!--<div class="w-75-l pl4-l">
     <strong class="f3">Hi, I'm Tom Critchlow 👋</strong>
     <br><br>
