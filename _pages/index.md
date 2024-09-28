@@ -11,10 +11,14 @@ permalink: /
    <img class="w-auto h-auto mw-100 mw-90-ns mw-80-l note-image image-container" style="transform:rotate(-2deg)" src="assets/alan.jpg">
   </a>-->
 
-<div class="bg-light-gray shadow-4 br2 mv4 center w-90 w-80-m w-70-l">
-  <a href="/about" class="db pa3">
-    <img class="w-100 h-100" style="transform:rotate(-2deg)" src="assets/alan.jpg" alt="Alan">
-  </a>
+<div class="bg-light-gray shadow-4 br2 mv4 center w-90" style="min-width: 350px; min-height: 467px;">
+  <div class="aspect-ratio aspect-ratio--3x4">
+    <div class="aspect-ratio--object flex items-center justify-center pa3">
+      <a href="/about" class="db w-100 h-100">
+        <img class="w-100 h-100 object-cover" style="transform:rotate(-2deg); min-width: 300px; min-height: 400px;" src="assets/alan.jpg" alt="Alan">
+      </a>
+    </div>
+  </div>
 </div>
 
 <!--<div class="w-75-l pl4-l">
