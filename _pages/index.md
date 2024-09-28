@@ -17,12 +17,12 @@ permalink: /
     </a>
   </div>
 
-    <!--<div class="w-75-l pl4-l">
+<!--<div class="w-75-l pl4-l">
     <strong class="f3">Hi, I'm Tom Critchlow 👋</strong>
     <br><br>
     I'm based in Brooklyn, NY and work as an independent consultant.
     <br><br>
-    Welcome to my digital garden 🌱
+    Welcome to my digital garden 🌱-->
   
 </div>
 <main class="mw7 center">
