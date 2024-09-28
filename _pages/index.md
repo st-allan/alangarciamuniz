@@ -13,7 +13,7 @@ permalink: /
 
 <div class="bg-light-gray shadow-4 br2 mv4 center w-90 w-80-m w-70-l">
   <a href="/about" class="db pa3">
-    <img class="w-100 h-auto" style="transform:rotate(-2deg)" src="assets/alan.jpg" alt="Alan">
+    <img class="w-100 h-100" style="transform:rotate(-2deg)" src="assets/alan.jpg" alt="Alan">
   </a>
 </div>
 
