@@ -11,11 +11,11 @@ permalink: /
    <img class="w-auto h-auto mw-100 mw-90-ns mw-80-l note-image image-container" style="transform:rotate(-2deg)" src="assets/alan.jpg">
   </a>-->
 
-  <div class="relative bg-light-gray shadow-4 br2 mv4 center" style="width: 90%; max-width: 600px; padding-bottom: 133.33%;">
-    <a href="/about" class="absolute top-0 right-0 bottom-0 left-0 flex items-center justify-center p-4">
-     <img class="max-w-90 max-h-90 w-auto h-auto" style="transform:rotate(-2deg)" src="assets/alan.jpg" alt="Alan">
-    </a>
-  </div>
+<div class="bg-light-gray shadow-4 br2 mv4 center w-90 w-80-m w-70-l">
+  <a href="/about" class="db pa3">
+    <img class="w-100 h-auto" style="transform:rotate(-2deg)" src="assets/alan.jpg" alt="Alan">
+  </a>
+</div>
 
 <!--<div class="w-75-l pl4-l">
     <strong class="f3">Hi, I'm Tom Critchlow 👋</strong>
