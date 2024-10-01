@@ -3,23 +3,18 @@ layout: default
 subtitle: blog.
 permalink: /
 ---
-<div class="pt2 pt3-l pb2 ph3 ph0-l center">
 
+<div class="pa4 br2 bg-light-gray shadow-4 mw5 center">
+  <a href="/about">
+    <img class="w-auto h-auto db" style="transform:rotate(-2deg)" src="assets/alan.jpg">
+  </a>
+</div>
  <!-- <div class="flex flex-wrap bg-light-gray shadow-4 pa4 lh-copy f4 br2 mv4 w-third-l w-two-thirds-m center">
  <div class="flex flex-wrap bg-light-gray shadow-4 pa4 lh-copy f4 br2 mv4 center">
   <a href="/about" class="db overflow-hidden">
    <img class="w-auto h-auto mw-100 mw-90-ns mw-80-l note-image image-container" style="transform:rotate(-2deg)" src="assets/alan.jpg">
   </a>-->
 
-<div class="bg-light-gray shadow-4 br2 mv4 center w-90 w-80-m w-60-l mw6">
-  <div class="aspect-ratio aspect-ratio--3x4">
-    <div class="aspect-ratio--object flex items-center justify-center pa3">
-      <a href="/about" class="db w-100 h-100">
-        <img class="w-100 h-100 object-cover" style="transform:rotate(-2deg);" src="assets/alan.jpg" alt="Alan">
-      </a>
-    </div>
-  </div>
-</div>
 <!--<div class="w-75-l pl4-l">
     <strong class="f3">Hi, I'm Tom Critchlow 👋</strong>
     <br><br>
@@ -27,7 +22,6 @@ permalink: /
     <br><br>
     Welcome to my digital garden 🌱-->
   
-</div>
 <main class="mw7 center">
   <ul class="list pl0">
     {% assign sorted_notes = site.notes | sort: 'date' | reverse %}
