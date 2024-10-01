@@ -4,23 +4,11 @@ subtitle: blog.
 permalink: /
 ---
 
-<div class="pa4 br2 bg-light-gray shadow-4 mw5 center">
+<div class="pa2 br2 bg-light-gray shadow-4 mw8 center">
   <a href="/about">
     <img class="w-auto h-auto db" style="transform:rotate(-2deg)" src="assets/alan.jpg">
   </a>
 </div>
- <!-- <div class="flex flex-wrap bg-light-gray shadow-4 pa4 lh-copy f4 br2 mv4 w-third-l w-two-thirds-m center">
- <div class="flex flex-wrap bg-light-gray shadow-4 pa4 lh-copy f4 br2 mv4 center">
-  <a href="/about" class="db overflow-hidden">
-   <img class="w-auto h-auto mw-100 mw-90-ns mw-80-l note-image image-container" style="transform:rotate(-2deg)" src="assets/alan.jpg">
-  </a>-->
-
-<!--<div class="w-75-l pl4-l">
-    <strong class="f3">Hi, I'm Tom Critchlow 👋</strong>
-    <br><br>
-    I'm based in Brooklyn, NY and work as an independent consultant.
-    <br><br>
-    Welcome to my digital garden 🌱-->
   
 <main class="mw7 center">
   <ul class="list pl0">
