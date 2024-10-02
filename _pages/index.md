@@ -6,7 +6,7 @@ permalink: /
 
 <div class="pa2 br2 bg-light-gray shadow-4 mw6 center">
   <a href="/about">
-    <img class="w-auto h-auto db" style="transform:rotate(-2deg)" src="assets/alan.jpg">
+    <img class="w-100 db" style="transform:rotate(-2deg)" src="assets/alan.jpg">
   </a>
 </div>
   
