@@ -4,13 +4,13 @@ subtitle: blog.
 permalink: /
 ---
 
-<div class="pa3 br3 bg-light-gray shadow-4 center mw5 mw6-ns">
-  <div class="aspect-ratio aspect-ratio--3x4">
-    <a href="/about" class="aspect-ratio--object overflow-hidden db">
-      <img class="w-100 h-100 object-cover" style="transform: rotate(-2deg);" src="assets/alan.jpg" alt="Alan">
-    </a>
-  </div>
+<div class="pa2 br2 bg-light-gray shadow-4 mw8 mw6-ns center" style="position: relative; padding-bottom: 137.6%;">
+  <a href="/about" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+    <img class="mw-100 h-auto db" style="transform:rotate(-2deg); width: 100%; height: auto;" src="assets/alan.jpg" alt="Alan">
+  </a>
 </div>
+
+
   
 <main class="mw7 center">
   <ul class="list pl0">
