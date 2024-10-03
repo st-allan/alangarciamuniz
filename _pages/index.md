@@ -4,9 +4,9 @@ subtitle: blog.
 permalink: /
 ---
 
-<div class="pa2 br2 bg-light-gray shadow-4 mw8 mw6-ns center" style="position: relative; padding-bottom: 137.6%;">
-  <a href="/about" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-    <img class="mw-100 h-auto db" style="transform:rotate(-2deg); width: 100%; height: auto;" src="assets/alan.jpg" alt="Alan">
+<div class="pa2 br2 bg-light-gray shadow-4 mw8 mw6-ns center aspect-ratio--object">
+  <a href="/about">
+    <img class="mw-100 db aspect-ratio--object" style="transform:rotate(-2deg)" src="assets/alan.jpg" alt="Description of image">
   </a>
 </div>
 
