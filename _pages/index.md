@@ -4,10 +4,12 @@ subtitle: blog.
 permalink: /
 ---
 
-<div class="pa2 br2 bg-light-gray shadow-4 mw6 center">
-  <a href="/about">
-    <img class="w-100 db" style="transform:rotate(-2deg)" src="assets/alan.jpg">
-  </a>
+<div class="pa3 br3 bg-light-gray shadow-4 center mw5 mw6-ns">
+  <div class="aspect-ratio aspect-ratio--3x4">
+    <a href="/about" class="aspect-ratio--object overflow-hidden db">
+      <img class="w-100 h-100 object-cover" style="transform: rotate(-2deg);" src="assets/alan.jpg" alt="Alan">
+    </a>
+  </div>
 </div>
   
 <main class="mw7 center">
