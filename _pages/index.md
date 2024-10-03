@@ -3,16 +3,14 @@ layout: default
 subtitle: blog.
 permalink: /
 ---
-<main class="mw7 center">
+
   <div class="pa2 br2 bg-light-gray shadow-4 mw8 mw6-ns center">
     <a href="/about">
     <img class="mw-100 db" style="transform:rotate(-2deg)" src="assets/alan.jpg" alt="Description of image">
    </a>
   </div>
 
-
-  
-
+<main class="mw7 center">
   <ul class="list pl0">
     {% assign sorted_notes = site.notes | sort: 'date' | reverse %}
     {% assign sliced_notes = sorted_notes | slice: 0,5 %}
