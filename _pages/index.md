@@ -4,7 +4,7 @@ subtitle: blog.
 permalink: /
 ---
 
-  <div class="pa2 br2 bg-light-gray shadow-4 mw6 center">
+  <div class="pa4 br2 bg-light-gray shadow-4 mw6 center">
     <a href="/about">
     <img class="mw-100 db pa3 center" style="transform:rotate(-2deg)" src="assets/alan.jpg" alt="Alan in Mexico City">
    </a>
