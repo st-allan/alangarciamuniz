@@ -5,7 +5,7 @@ permalink: /
 ---
 <main class="mw7 center">
   <div class="pa4 br2 bg-light-gray shadow-4 mw6 center">
-    <a href="/about" class="db tc ml3 mr3">
+    <a href="/about" class="db overflow-hidden image-container">
     <img class="mw-100 db center" style="transform:rotate(-2deg)" src="assets/alan.jpg" alt="Alan in Mexico City">
    </a>
   </div>
