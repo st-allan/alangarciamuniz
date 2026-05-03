@@ -16,10 +16,10 @@
   route: "Bosque de Chapultepec loop"
   km: 8
   bike: "Canyon Grizl RAW"
-  image: "/assets/rides/chapultepec.jpg"
+  image: "/assets/rides/psalm23.jpg"
 
 - date: "2026-04-20"
   route: "Periférico south, early morning"
   km: 7
   bike: "Canyon Aeroad"
-  image: "/assets/rides/periferico.jpg"
+  image: "/assets/rides/psalm23.jpg"
