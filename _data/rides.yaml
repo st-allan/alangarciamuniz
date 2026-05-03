@@ -1,0 +1,25 @@
+# _data/rides.yaml
+# ─────────────────────────────────────────────────────────────
+# Add one entry per ride. The page reads this file at build time.
+# Images: upload to /assets/rides/ and reference as shown below.
+# Date format: YYYY-MM-DD
+#
+# Fields:
+#   date    — required
+#   route   — required, string description of the ride
+#   km      — required, number (decimals ok: 12.4)
+#   bike    — required, one of your three bikes
+#   image   — optional, path relative to site root
+# ─────────────────────────────────────────────────────────────
+
+- date: "2026-04-28"
+  route: "Bosque de Chapultepec loop"
+  km: 8
+  bike: "Canyon Grizl RAW"
+  image: "/assets/rides/chapultepec.jpg"
+
+- date: "2026-04-20"
+  route: "Periférico south, early morning"
+  km: 7
+  bike: "Canyon Aeroad"
+  image: "/assets/rides/periferico.jpg"
