@@ -241,11 +241,12 @@ permalink: /wikipedia/
     <div class="wiki-goal-label">of {{ goal }} articles live &mdash; end of 2026</div>
 
     <!-- Five dots -->
+    {% assign live_plus_active = live_count | plus: inprogress_count %}
     <div class="five-dots">
       {% for i in (1..goal) %}
         {% if i <= live_count %}
           <div class="five-dot filled"></div>
-        {% elsif i <= live_count | plus: inprogress_count %}
+        {% elsif i <= live_plus_active %}
           <div class="five-dot in-progress"></div>
         {% else %}
           <div class="five-dot"></div>
@@ -299,24 +300,43 @@ permalink: /wikipedia/
       {% endif %}
 
       <!-- Pipeline -->
+      <!--
+        We build a string of statuses seen so far in the loop.
+        A step is "done"    if the article's status is NOT yet in seen AND current != article status.
+        A step is "active"  if current == article status.
+        A step is upcoming  if the article's status IS already in seen.
+        The connector line is "done" if the step to its right is done or active.
+      -->
       <div class="pipeline">
+        {% assign seen = "" %}
         {% for status in statuses %}
-          {% assign s_idx = forloop.index0 %}
-          {% assign a_idx = statuses | index_of: article.status %}
+          {% assign is_active = false %}
+          {% assign is_done = false %}
+          {% if status == article.status %}
+            {% assign is_active = true %}
+          {% elsif seen contains article.status %}
+            {% comment %}upcoming{% endcomment %}
+          {% else %}
+            {% assign is_done = true %}
+          {% endif %}
+
           {% if forloop.index0 > 0 %}
-            {% if s_idx <= a_idx %}
-              <div class="pipeline-line done"></div>
-            {% else %}
+            {% if seen contains article.status %}
               <div class="pipeline-line"></div>
+            {% else %}
+              <div class="pipeline-line done"></div>
             {% endif %}
           {% endif %}
-          {% if s_idx < a_idx %}
-            <div class="pipeline-step done"><div class="pipeline-dot done"></div><span>{{ status }}</span></div>
-          {% elsif s_idx == a_idx %}
+
+          {% if is_active %}
             <div class="pipeline-step active"><div class="pipeline-dot active"></div><span>{{ status }}</span></div>
+          {% elsif is_done %}
+            <div class="pipeline-step done"><div class="pipeline-dot done"></div><span>{{ status }}</span></div>
           {% else %}
             <div class="pipeline-step"><div class="pipeline-dot"></div><span>{{ status }}</span></div>
           {% endif %}
+
+          {% assign seen = seen | append: status %}
         {% endfor %}
       </div>
     </div>
