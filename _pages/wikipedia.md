@@ -6,25 +6,118 @@ permalink: /wikipedia/
 
 <!--
   _pages/wikipedia.md
-  ──────────────────────────────────────────────────────────────
+  ─────────────────────
   Drop this file into your Jekyll _pages/ folder.
-  Articles are injected from _data/articles.yaml via Jekyll at
-  build time — no runtime editing needed.
-
-  Requires React + Babel CDN scripts. Simplest approach: add
-  these three lines to _includes/head.html (or equivalent):
-
-  <script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin></script>
-  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js"></script>
-
-  Or scope them to this page only by checking
-  {{ page.title == "5 wikipedia articles" }} in your layout.
+  Articles are driven by _data/articles.yaml — add or edit entries there.
+  No JavaScript framework required.
 -->
 
 <style>
   *, *::before, *::after { box-sizing: border-box; }
 
+  .wiki-page {
+    max-width: 560px;
+    margin: 0 auto;
+    padding: 0 16px 64px;
+    font-family: 'Libre Franklin', -apple-system, sans-serif;
+  }
+
+  /* ── Header ── */
+  .wiki-heading {
+    padding-top: 24px;
+    margin-bottom: 0;
+  }
+  .wiki-heading h1 {
+    font-weight: 300;
+    font-size: 1rem;
+    color: hsl(0,0%,10%);
+    margin: 0 0 2px;
+  }
+  .wiki-heading p {
+    font-size: 0.8rem;
+    color: hsl(0,0%,45%);
+    margin: 0;
+  }
+
+  /* ── Counter ── */
+  .wiki-counter {
+    padding-top: 36px;
+    padding-bottom: 16px;
+    text-align: center;
+  }
+  .wiki-number {
+    font-weight: 300;
+    font-size: 5rem;
+    line-height: 1;
+    color: hsl(0,0%,10%);
+    letter-spacing: -0.03em;
+    margin-bottom: 6px;
+  }
+  .wiki-goal-label {
+    font-size: 0.875rem;
+    color: hsl(0,0%,40%);
+    margin-bottom: 28px;
+  }
+
+  /* ── Five dots ── */
+  .five-dots {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 8px;
+  }
+  .five-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1.5px solid hsl(0,0%,72%);
+    background: transparent;
+  }
+  .five-dot.filled      { background: hsl(0,0%,10%); border-color: hsl(0,0%,10%); }
+  .five-dot.in-progress { background: transparent;   border-color: hsl(0,0%,10%); }
+
+  /* ── Legend ── */
+  .wiki-legend {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 12px;
+  }
+  .wiki-legend-item {
+    font-size: 0.72rem;
+    color: hsl(0,0%,55%);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .legend-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .legend-dot-live        { background: hsl(0,0%,10%); }
+  .legend-dot-inprogress  { border: 1.5px solid hsl(0,0%,10%); background: transparent; }
+  .legend-dot-notstarted  { border: 1.5px solid hsl(0,0%,72%); background: transparent; }
+
+  /* ── Divider ── */
+  .wiki-divider {
+    border: none;
+    height: 1px;
+    background: hsl(0,0%,90%);
+    margin: 4px 0 24px;
+  }
+
+  /* ── Articles count ── */
+  .wiki-count {
+    font-size: 0.78rem;
+    color: hsl(0,0%,55%);
+    margin-bottom: 4px;
+  }
+
+  /* ── Article cards ── */
   .article-card {
     padding: 20px 0 28px;
     border-bottom: 1px solid hsl(0,0%,92%);
@@ -40,6 +133,36 @@ permalink: /wikipedia/
     margin-bottom: 14px;
   }
 
+  .article-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 4px;
+  }
+  .article-title {
+    font-weight: 300;
+    font-size: 1.05rem;
+    color: hsl(0,0%,10%);
+    line-height: 1.3;
+    text-decoration: none;
+  }
+  .article-title:hover { opacity: 0.5; }
+  .article-date {
+    font-size: 0.8rem;
+    color: hsl(0,0%,45%);
+    margin-bottom: 8px;
+  }
+  .article-description {
+    font-size: 0.875rem;
+    color: hsl(0,0%,32%);
+    line-height: 1.55;
+    font-weight: 300;
+    margin: 0 0 10px;
+  }
+
+  /* ── Chip ── */
   .chip {
     display: inline-flex;
     align-items: center;
@@ -51,6 +174,7 @@ permalink: /wikipedia/
     font-family: 'Libre Franklin', sans-serif;
   }
 
+  /* ── Status pipeline ── */
   .pipeline {
     display: flex;
     align-items: center;
@@ -84,191 +208,164 @@ permalink: /wikipedia/
   }
   .pipeline-line.done { background: hsl(0,0%,40%); }
 
-  .five-dots {
-    display: flex;
-    gap: 12px;
-    align-items: center;
-    justify-content: center;
-    padding: 32px 0 8px;
+  @media (max-width: 640px) {
+    .wiki-number { font-size: 3.8rem; }
   }
-  .five-dot {
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    border: 1.5px solid hsl(0,0%,72%);
-    background: transparent;
-  }
-  .five-dot.filled      { background: hsl(0,0%,10%); border-color: hsl(0,0%,10%); }
-  .five-dot.in-progress { background: transparent;   border-color: hsl(0,0%,10%); }
 </style>
 
-<!-- Jekyll injects article data at build time -->
-<div id="wiki-root"></div>
-<script>
-  window.__JEKYLL_ARTICLES__ = [
-    {% for article in site.data.articles %}
-    {
-      id: {{ forloop.index }},
-      title: {{ article.title | jsonify }},
-      description: {{ article.description | default: '' | jsonify }},
-      category: {{ article.category | jsonify }},
-      status: {{ article.status | jsonify }},
-      startedDate: "{{ article.started_date }}",
-      liveDate: "{{ article.live_date | default: '' }}",
-      url: "{{ article.url | default: '' }}",
-      image: "{{ article.image | default: '' }}"
-    }{% unless forloop.last %},{% endunless %}
+<!-- ── DATA (driven by _data/articles.yaml) ─────────────────── -->
+{% assign articles = site.data.articles %}
+{% assign statuses = "idea,researching,draft,submitted,live" | split: "," %}
+{% assign goal = 5 %}
+{% assign live_count = 0 %}
+{% assign inprogress_count = 0 %}
+{% for article in articles %}
+  {% if article.status == "live" %}
+    {% assign live_count = live_count | plus: 1 %}
+  {% else %}
+    {% assign inprogress_count = inprogress_count | plus: 1 %}
+  {% endif %}
+{% endfor %}
+
+<div class="wiki-page">
+
+  <!-- Heading -->
+  <div class="wiki-heading">
+    <h1>5 wikipedia articles</h1>
+    <p>a goal to author 5 new wikipedia pages before the end of 2026.</p>
+  </div>
+
+  <!-- Counter -->
+  <div class="wiki-counter">
+    <div class="wiki-number">{{ live_count }}</div>
+    <div class="wiki-goal-label">of {{ goal }} articles live &mdash; end of 2026</div>
+
+    <!-- Five dots -->
+    <div class="five-dots">
+      {% for i in (1..goal) %}
+        {% if i <= live_count %}
+          <div class="five-dot filled"></div>
+        {% elsif i <= live_count | plus: inprogress_count %}
+          <div class="five-dot in-progress"></div>
+        {% else %}
+          <div class="five-dot"></div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <!-- Legend -->
+    <div class="wiki-legend">
+      <span class="wiki-legend-item">
+        <span class="legend-dot legend-dot-live"></span>live
+      </span>
+      <span class="wiki-legend-item">
+        <span class="legend-dot legend-dot-inprogress"></span>in progress
+      </span>
+      <span class="wiki-legend-item">
+        <span class="legend-dot legend-dot-notstarted"></span>not started
+      </span>
+    </div>
+  </div>
+
+  <hr class="wiki-divider">
+
+  <!-- Count -->
+  <div class="wiki-count">
+    {{ articles | size }} {% if articles.size == 1 %}article{% else %}articles{% endif %} tracked
+  </div>
+
+  <!-- Article cards — live sorted last -->
+  {% assign in_progress_articles = articles | where_exp: "a", "a.status != 'live'" | sort: "started_date" | reverse %}
+  {% assign live_articles = articles | where: "status", "live" | sort: "live_date" | reverse %}
+
+  <div class="wiki-articles-list">
+    {% for article in in_progress_articles %}
+    <div class="article-card">
+      {% if article.image %}
+      <img class="article-img" src="{{ article.image | relative_url }}" alt="{{ article.title }}">
+      {% endif %}
+
+      <div class="article-header">
+        <span class="article-title">{{ article.title }}</span>
+        <span class="chip">{{ article.category }}</span>
+      </div>
+
+      <div class="article-date">
+        started {{ article.started_date | date: "%-d %b %Y" }}
+      </div>
+
+      {% if article.description %}
+      <p class="article-description">{{ article.description }}</p>
+      {% endif %}
+
+      <!-- Pipeline -->
+      <div class="pipeline">
+        {% for status in statuses %}
+          {% assign s_idx = forloop.index0 %}
+          {% assign a_idx = statuses | index_of: article.status %}
+          {% if forloop.index0 > 0 %}
+            {% if s_idx <= a_idx %}
+              <div class="pipeline-line done"></div>
+            {% else %}
+              <div class="pipeline-line"></div>
+            {% endif %}
+          {% endif %}
+          {% if s_idx < a_idx %}
+            <div class="pipeline-step done"><div class="pipeline-dot done"></div><span>{{ status }}</span></div>
+          {% elsif s_idx == a_idx %}
+            <div class="pipeline-step active"><div class="pipeline-dot active"></div><span>{{ status }}</span></div>
+          {% else %}
+            <div class="pipeline-step"><div class="pipeline-dot"></div><span>{{ status }}</span></div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
     {% endfor %}
-  ];
-</script>
 
-<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js"></script>
-<script type="text/babel">
+    {% for article in live_articles %}
+    <div class="article-card">
+      {% if article.image %}
+      <img class="article-img" src="{{ article.image | relative_url }}" alt="{{ article.title }}">
+      {% endif %}
 
-const GOAL     = 5;
-const DEADLINE = 'end of 2026';
-const STATUSES = ['idea', 'researching', 'draft', 'submitted', 'live'];
-
-const formatDate = (iso) => {
-  if (!iso) return '';
-  const [y, m, d] = iso.split('-');
-  const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-  return `${parseInt(d)} ${months[parseInt(m)-1]} ${y}`;
-};
-
-// ── Five-dot counter ──────────────────────────────────────────
-const FiveDotsCounter = ({ articles, goal }) => {
-  const live   = articles.filter(a => a.status === 'live').length;
-  const active = articles.filter(a => a.status !== 'live').length;
-
-  return (
-    <div style={{ paddingTop: '36px', paddingBottom: '16px', textAlign: 'center' }}>
-      <div style={{ fontWeight: 300, fontSize: '5rem', lineHeight: 1, color: 'hsl(0,0%,10%)', letterSpacing: '-0.03em', marginBottom: '6px' }}>
-        {live}
-      </div>
-      <div style={{ fontSize: '0.875rem', color: 'hsl(0,0%,40%)', marginBottom: '28px' }}>
-        of {goal} articles live &mdash; {DEADLINE}
+      <div class="article-header">
+        {% if article.url %}
+        <a class="article-title" href="{{ article.url }}" target="_blank" rel="noopener noreferrer">{{ article.title }}</a>
+        {% else %}
+        <span class="article-title">{{ article.title }}</span>
+        {% endif %}
+        <span class="chip">{{ article.category }}</span>
       </div>
 
-      <div className="five-dots">
-        {Array.from({ length: goal }).map((_, i) => {
-          let cls = 'five-dot';
-          if (i < live) cls += ' filled';
-          else if (i < live + active) cls += ' in-progress';
-          return <div key={i} className={cls}></div>;
-        })}
+      <div class="article-date">
+        published {{ article.live_date | date: "%-d %b %Y" }}
       </div>
 
-      <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', marginTop: '12px' }}>
-        {[
-          { label: 'live',        dot: { background: 'hsl(0,0%,10%)' } },
-          { label: 'in progress', dot: { border: '1.5px solid hsl(0,0%,10%)', background: 'transparent' } },
-          { label: 'not started', dot: { border: '1.5px solid hsl(0,0%,72%)', background: 'transparent' } },
-        ].map(({ label, dot }) => (
-          <span key={label} style={{ fontSize: '0.72rem', color: 'hsl(0,0%,55%)', display: 'flex', alignItems: 'center', gap: '5px' }}>
-            <span style={{ display: 'inline-block', width: '8px', height: '8px', borderRadius: '50%', ...dot }}></span>
-            {label}
-          </span>
-        ))}
+      {% if article.description %}
+      <p class="article-description">{{ article.description }}</p>
+      {% endif %}
+
+      <!-- Pipeline — all steps done -->
+      <div class="pipeline">
+        {% for status in statuses %}
+          {% if forloop.index0 > 0 %}
+            <div class="pipeline-line done"></div>
+          {% endif %}
+          {% if status == "live" %}
+            <div class="pipeline-step active"><div class="pipeline-dot active"></div><span>{{ status }}</span></div>
+          {% else %}
+            <div class="pipeline-step done"><div class="pipeline-dot done"></div><span>{{ status }}</span></div>
+          {% endif %}
+        {% endfor %}
       </div>
     </div>
-  );
-};
+    {% endfor %}
 
-// ── Status Pipeline ───────────────────────────────────────────
-const StatusPipeline = ({ status }) => {
-  const currentIdx = STATUSES.indexOf(status);
-  return (
-    <div className="pipeline">
-      {STATUSES.map((s, i) => {
-        const isDone   = i < currentIdx;
-        const isActive = i === currentIdx;
-        return (
-          <React.Fragment key={s}>
-            {i > 0 && <div className={`pipeline-line${isDone ? ' done' : ''}`}></div>}
-            <div className={`pipeline-step${isDone ? ' done' : ''}${isActive ? ' active' : ''}`}>
-              <div className={`pipeline-dot${isDone ? ' done' : ''}${isActive ? ' active' : ''}`}></div>
-              <span>{s}</span>
-            </div>
-          </React.Fragment>
-        );
-      })}
-    </div>
-  );
-};
+    {% if articles.size == 0 %}
+    <p style="font-size:0.875rem;color:hsl(0,0%,55%);padding:32px 0;text-align:center">
+      no articles yet.
+    </p>
+    {% endif %}
+  </div>
 
-// ── Article Card ──────────────────────────────────────────────
-const ArticleCard = ({ article }) => {
-  const isLive = article.status === 'live';
-  return (
-    <div className="article-card">
-      {article.image && (
-        <img src={article.image} alt={article.title} className="article-img" />
-      )}
-
-      <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: '12px', marginBottom: '4px', flexWrap: 'wrap' }}>
-        <span style={{ fontWeight: 300, fontSize: '1.05rem', color: 'hsl(0,0%,10%)', lineHeight: 1.3 }}>
-          {isLive && article.url
-            ? <a href={article.url} target="_blank" rel="noopener noreferrer" style={{ color: 'hsl(0,0%,10%)', textDecoration: 'none' }}>{article.title}</a>
-            : article.title}
-        </span>
-        <span className="chip">{article.category}</span>
-      </div>
-
-      <div style={{ fontSize: '0.8rem', color: 'hsl(0,0%,45%)', marginBottom: '8px' }}>
-        {isLive && article.liveDate
-          ? `published ${formatDate(article.liveDate)}`
-          : `started ${formatDate(article.startedDate)}`}
-      </div>
-
-      {article.description && (
-        <p style={{ fontSize: '0.875rem', color: 'hsl(0,0%,32%)', margin: '0 0 10px', lineHeight: 1.55, fontWeight: 300 }}>
-          {article.description}
-        </p>
-      )}
-
-      <StatusPipeline status={article.status} />
-    </div>
-  );
-};
-
-// ── Page ──────────────────────────────────────────────────────
-const WikiPage = () => {
-  const articles = window.__JEKYLL_ARTICLES__ || [];
-
-  const sorted = [...articles].sort((a, b) => {
-    if (a.status === 'live' && b.status !== 'live') return 1;
-    if (a.status !== 'live' && b.status === 'live') return -1;
-    return b.startedDate.localeCompare(a.startedDate);
-  });
-
-  return (
-    <main style={{ maxWidth: '560px', margin: '0 auto', padding: '0 16px 64px', fontFamily: "'Libre Franklin', sans-serif" }}>
-      <div style={{ paddingTop: '24px' }}>
-        <h1 style={{ fontWeight: 300, fontSize: '1rem', color: 'hsl(0,0%,10%)', margin: '0 0 2px' }}>5 wikipedia articles</h1>
-        <p style={{ fontSize: '0.8rem', color: 'hsl(0,0%,45%)', margin: 0 }}>
-          a goal to author 5 new wikipedia pages before the {DEADLINE}.
-        </p>
-      </div>
-
-      <FiveDotsCounter articles={articles} goal={GOAL} />
-
-      <hr style={{ border: 'none', height: '1px', background: 'hsl(0,0%,90%)', margin: '4px 0 24px' }} />
-
-      <div style={{ marginBottom: '4px' }}>
-        <span style={{ fontSize: '0.78rem', color: 'hsl(0,0%,55%)' }}>
-          {articles.length} {articles.length === 1 ? 'article' : 'articles'} tracked
-        </span>
-      </div>
-
-      <div>
-        {sorted.map(article => <ArticleCard key={article.id} article={article} />)}
-      </div>
-    </main>
-  );
-};
-
-ReactDOM.createRoot(document.getElementById('wiki-root')).render(<WikiPage />);
-</script>
+</div>
