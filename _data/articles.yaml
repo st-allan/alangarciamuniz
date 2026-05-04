@@ -1,0 +1,29 @@
+# _data/articles.yaml
+# ─────────────────────────────────────────────────────────────
+# Add one entry per Wikipedia article. The page reads this file
+# at build time — no code changes needed to add or update.
+#
+# Fields:
+#   title        — required, article title
+#   description  — optional, one or two sentences
+#   category     — required, e.g. history, biography, science, etc.
+#   status       — required, one of: idea / researching / draft / submitted / live
+#   started_date — required, YYYY-MM-DD
+#   live_date    — optional, YYYY-MM-DD (only when status: live)
+#   url          — optional, full Wikipedia URL (only when status: live)
+#   image        — optional, path relative to site root e.g. /assets/articles/tlacoyo.jpg
+# ─────────────────────────────────────────────────────────────
+
+- title: "Callejón del Beso"
+  description: "The narrow alley in Guanajuato and the legend behind it."
+  category: "history"
+  status: "researching"
+  started_date: "2026-03-10"
+  image: "/assets/rides/osea-hello.png"
+
+- title: "Tlacoyo"
+  description: "Pre-Hispanic masa snack still sold on Mexico City streets."
+  category: "arts & culture"
+  status: "idea"
+  started_date: "2026-04-15"
+  image: ""
