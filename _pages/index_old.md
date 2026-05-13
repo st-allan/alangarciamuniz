@@ -1,7 +1,7 @@
 ---
 layout: default
 subtitle: blog.
-permalink: /
+permalink: /oldindex
 ---
 <main class="mw7 center ph3 pt3 pt4-ns">
   <div class="pa4 br2 bg-light-gray shadow-4 mw6 center">
