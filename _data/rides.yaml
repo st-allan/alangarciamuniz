@@ -16,30 +16,30 @@
   route: "Tucson Loop (Brandi Fenton Memorial Park)"
   km: 26.78
   bike: "Canyon Grizl 7 RAW"
-  image: "/assets/rides/psalm23.jpg"
+  image: "/assets/rides/ride-2026-05-02.webp"
 
 - date: "2026-05-09"
   route: "East Park Link Drive"
   km: 32.45
   bike: "Canyon Aeroad CF SLX 8 Di2"
-  image: "/assets/rides/psalm23.jpg"
+  image: "/assets/rides/ride-2026-05-09.webp"
 
 - date: "2026-05-16"
   route: "East Park Link Drive"
   km: 58.75
   bike: "Canyon Aeroad CF SLX 8 Di2"
-  image: "/assets/rides/psalm23.jpg"
+  image: "/assets/rides/ride-2026-05-16.webp"
 
 - date: "2026-05-30"
   route: "Tucson Loop (Rillito)"
   km: 40.70
   bike: "S-Works Crux SRAM Red XPLOR"
-  image: "/assets/rides/psalm23.jpg"
+  image: "/assets/rides/ride-2026-05-30.webp"
 
 - date: "2026-06-12"
   route: "East Park Link Drive"
   km: 58.46
   bike: "Canyon Aeroad CF SLX 8 Di2"
-  image: "/assets/rides/psalm23.jpg"
+  image: "/assets/rides/ride-2026-06-12.webp"
 
 
